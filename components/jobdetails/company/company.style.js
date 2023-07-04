@@ -54,10 +54,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  locationImage: {
-    width: 14,
-    height: 14,
-    tintColor: COLORS.gray,
+  locationIcon: {
+    color: COLORS.gray,
   },
 
   locationName: {

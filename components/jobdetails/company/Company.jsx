@@ -3,7 +3,6 @@ import { View, Text, Image, TouchableOpacity, Linking } from "react-native";
 
 import styles from "./company.style";
 import { checkImageUrl } from "../../../utils";
-import { icons } from "../../../constants";
 import { Ionicons } from "@expo/vector-icons";
 
 const Company = ({
@@ -58,10 +57,15 @@ const Company = ({
       <View style={styles.companyInfoBox}>
         <Text style={styles.companyName}>{companyName} / </Text>
         <View>
-          <Image
+          {/* <Image
             source={icons.location}
             resizeMode="contain"
             style={styles.locationImage}
+          /> */}
+          <Ionicons
+            name="location-outline"
+            style={styles.locationIcon}
+            size={14}
           />
         </View>
         <Text style={styles.locationName}>{location}</Text>
